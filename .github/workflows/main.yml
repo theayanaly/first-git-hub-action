@@ -12,4 +12,5 @@ jobs:
       - name: Greetings
         run: echo "Hello From Apun"
 
-      
+      - name: syntax error
+        run: echo "Hello World"
