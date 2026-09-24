@@ -14,5 +14,5 @@ jobs:
       - name: Greetings
         run: echo Hello From Apun
 
-      - name: Check Syntax Error
-        run: python -m py_compile file.py
+      - name: Check Syntax Errors
+        run: python -m compileall .
