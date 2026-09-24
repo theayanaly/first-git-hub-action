@@ -13,4 +13,4 @@ jobs:
        run: echo "Hello From Apun"
 
      - name: Check Python Syntax
-        run: python -m compile -q 
+       run: python -m compile -q 
