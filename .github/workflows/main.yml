@@ -8,19 +8,11 @@ jobs:
   demo:
     runs-on: ubuntu-latest
 
-    steps:
-      - name: Checkout Code
-        uses: actions/checkout@v4
-
-      - name: Set up Python
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Greetings
+  steps:
+     - name: Greetings
         run: echo "Hello From Apun"
 
-      - name: Check Syntax Error
+     - name: Check Syntax Error
         run: python -m py_compile file.py
 
       
