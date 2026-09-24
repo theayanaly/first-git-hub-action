@@ -7,12 +7,12 @@ on:
 jobs:
   demo:
     runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
 
-  steps:
-     - name: Greetings
-        run: echo "Hello From Apun"
+      - name: Greetings
+        run: echo Hello From Apun
 
-     - name: Check Syntax Error
+      - name: Check Syntax Error
         run: python -m py_compile file.py
-
-      
